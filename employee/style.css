@@ -1,0 +1,137 @@
+/* ===== Employee Dashboard ===== */
+
+.main-content {
+    padding: 24px;
+    background: #f8fafc;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+}
+
+/* Header */
+.card h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.muted {
+    color: #64748b;
+}
+
+/* Stats */
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat .label {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.stat .num {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+/* Task Table */
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: left;
+    font-size: 13px;
+    color: #64748b;
+    padding-bottom: 10px;
+}
+
+tbody td {
+    padding: 14px 0;
+    border-top: 1px solid #f1f5f9;
+    vertical-align: top;
+}
+
+/* Priority Badge */
+.priority {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.priority.Low {
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+.priority.Medium {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.priority.High {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* Status Badge */
+.status {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status.pending {
+    background: #ffedd5;
+    color: #c2410c;
+}
+
+.status.in_progress {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.status.completed {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.btn-update {
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-update:hover {
+    background: #1d4ed8;
+}
+
+.muted.small {
+    font-size: 12px;
+    color: #94a3b8;
+}
